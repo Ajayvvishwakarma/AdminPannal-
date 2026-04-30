@@ -1,0 +1,137 @@
+/* GLOBAL */
+body {
+  background: #0a0a0f;
+  color: #f0f0f5;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+}
+
+/* LOGIN SECTION */
+#login-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow background */
+#login-section::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,61,0,0.15), transparent 70%);
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+}
+
+#login-section::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,112,67,0.1), transparent 70%);
+  bottom: -50px;
+  right: -50px;
+  border-radius: 50%;
+}
+
+/* LOGIN BOX */
+.login-box {
+  background: #13131a;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 24px;
+  padding: 48px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+}
+
+/* LOGO */
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.login-logo-icon {
+  width: 48px;
+  height: 48px;
+  background: #ff3d00;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo-text {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+.login-logo-text span {
+  color: #ff3d00;
+}
+
+/* TEXT */
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.login-sub {
+  color: #6b6b80;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: #6b6b80;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  background: #1c1c26;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 14px;
+  color: white;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #ff3d00;
+}
+
+/* BUTTON */
+.btn-login {
+  width: 100%;
+  background: #ff3d00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  background: #ff7043;
+  transform: translateY(-1px);
+}
